@@ -104,3 +104,38 @@ footer {
     color: white;
     margin-top: 60px;
 }
+/* Section Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+/* Article Card Hover Effect */
+.article-card {
+    transition: 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Button Style */
+.read-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    background: #2563EB;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
