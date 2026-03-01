@@ -93,17 +93,18 @@
 function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("active");
 }
+</script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function() {
     const form = document.getElementById("signup-form");
     const message = document.getElementById("signup-message");
 
     form.addEventListener("submit", function(e) {
-        e.preventDefault(); // Prevent page reload
-        message.style.display = "block"; // Show thank you message
-        form.reset(); // Clear form fields
+        e.preventDefault(); // Stop form from reloading page
+        message.style.display = "block"; // Show thank-you message
+        form.reset(); // Clear input field
     });
-});
+};
 </script>
 </body>
 </html>
