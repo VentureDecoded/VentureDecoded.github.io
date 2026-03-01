@@ -84,6 +84,18 @@
 function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("active");
 }
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("signup-form");
+    const message = document.getElementById("signup-message");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent page reload
+        message.style.display = "block"; // Show thank you message
+        form.reset(); // Clear form fields
+    });
+});
+</script>
 </script>
 </body>
 </html>
