@@ -86,16 +86,15 @@
     <p>© 2026 VentureDecoded. All Rights Reserved.</p>
 </footer>
 <script>
-function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("active");
-}
-</script>
-<script>
-document.getElementById("signup-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    // Here you can integrate an email service like MailerLite or ConvertKit
-    document.getElementById("signup-message").style.display = "block";
-    document.getElementById("signup-form").reset();
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("signup-form");
+    const message = document.getElementById("signup-message");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent page reload
+        message.style.display = "block"; // Show thank you message
+        form.reset(); // Clear form fields
+    });
 });
 </script>
 </body>
