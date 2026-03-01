@@ -90,5 +90,13 @@ function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("active");
 }
 </script>
+<script>
+document.getElementById("signup-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    // Here you can integrate an email service like MailerLite or ConvertKit
+    document.getElementById("signup-message").style.display = "block";
+    document.getElementById("signup-form").reset();
+});
+</script>
 </body>
 </html>
