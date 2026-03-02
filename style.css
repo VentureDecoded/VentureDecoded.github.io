@@ -277,3 +277,13 @@ footer {
 #signup-form button:hover {
     background-color: #0056b3;
 }
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo img {
+    height: 40px;   /* Adjust size if needed */
+    width: auto;
+}
